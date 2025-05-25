@@ -1,4 +1,4 @@
-# aplicaçao de principios fundamentais de projeto de software, com base no modelo SOLID. 
+# aplicaçao de princípios fundamentais de projeto de software, com base no modelo SOLID. 
 
 # principios abordados 
 1. SRP - Single Responsibility Principle
@@ -8,7 +8,7 @@
 
 ### 1. SRP — Single Responsibility Principle 
 o que é e para que serve? 
-cada classe deve possuir uma única responsabilidade e um único motivo para modificaçao. o objetivo é reduzir acoplamento entre funcionalidades distintas
+cada classe deve possuir uma única responsabilidade e um único motivo para modificaçao. o objetivo é reduzir acoplamento entre funcionalidades distintas.
 
 **Exemplo:**
 
@@ -25,6 +25,7 @@ dados = "vendas do mes"
 relatorio = GeradorDeRelatorio().gerar(dados)
 ImpressoraDeRelatorio().imprimir(relatorio
 ```
+no código, cada classe possui uma única responsabilidade, gerar ou imprimir. SRP se aplica pois as responsabilidades estao separadas.
 
 ### 2. OCP — Open-Closed Principle 
 o que é e para que serve? 
@@ -52,6 +53,7 @@ class Carrinho:
 vip = Carrinho(DescontoClienteVip())
 print(vip.total(100))
 ````
+nesse caso, carrinho está fechado para modificaçao, mas pode ser estendido. o OCP é aplicado justamente por permitir essa mudança sem que altere a lógica existente.
 
 
 ### 3. DIP — Dependency Inversion Principle
@@ -85,6 +87,7 @@ pedido = Pedido(notificador)
 pedido.finalizar()
 
 ````
+pedido depende da abstraçao INotificador, não da implementação concreta. o DIP é aplicado ao separar alto nível (Pedido) e baixo nível (NotificadorEmail) por meio de uma interface.
 
 ### 4. Composição em vez de Herança
 o que é e para que serve? 
@@ -108,7 +111,7 @@ class Carro:
 carro = Carro()
 carro.ligar()
 ````
-
+o princípio é aplicado ao usar composiçao para reaproveitar comportamentos sem herança direta. carro nao está herdando motor
 
 
 
