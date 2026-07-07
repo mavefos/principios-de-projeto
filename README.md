@@ -1,6 +1,6 @@
-# aplicaçao de princípios fundamentais de projeto de software, com base no modelo SOLID. 
+# aplicação de princípios fundamentais de projeto de software, com base no modelo SOLID. 
 
-# principios abordados 
+# princípios abordados 
 1. SRP - Single Responsibility Principle
 2. OCP - Open-Closed Principle
 3. DIP - Dependency Inversion Principle
